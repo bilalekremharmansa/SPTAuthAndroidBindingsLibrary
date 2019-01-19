@@ -1,0 +1,2659 @@
+<api
+  api-source="class-parse">
+  <package
+    name="com.spotify.sdk.android.authentication"
+    jni-name="com/spotify/sdk/android/authentication">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/app/Activity;"
+      extends="android.app.Activity"
+      extends-generic-aware="android.app.Activity"
+      final="false"
+      name="AuthCallbackActivity"
+      jni-signature="Lcom/spotify/sdk/android/authentication/AuthCallbackActivity;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="AuthCallbackActivity"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onCreate"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Bundle;)V">
+        <parameter
+          name="savedInstanceState"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="AuthenticationClient"
+      jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationClient;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="AuthenticationClient"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;)V">
+        <parameter
+          name="activity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createLoginActivityIntent"
+        native="false"
+        return="android.content.Intent"
+        jni-return="Landroid/content/Intent;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;Lcom/spotify/sdk/android/authentication/AuthenticationRequest;)Landroid/content/Intent;">
+        <parameter
+          name="contextActivity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+        <parameter
+          name="request"
+          type="com.spotify.sdk.android.authentication.AuthenticationRequest"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationRequest;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getResponse"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationResponse"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationResponse;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILandroid/content/Intent;)Lcom/spotify/sdk/android/authentication/AuthenticationResponse;">
+        <parameter
+          name="resultCode"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="intent"
+          type="android.content.Intent"
+          jni-type="Landroid/content/Intent;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isAvailable"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Landroid/content/Intent;)Z">
+        <parameter
+          name="ctx"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="intent"
+          type="android.content.Intent"
+          jni-type="Landroid/content/Intent;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="openDownloadSpotifyActivity"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;)V">
+        <parameter
+          name="contextActivity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="openDownloadSpotifyActivity"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;Ljava/lang/String;)V">
+        <parameter
+          name="contextActivity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+        <parameter
+          name="campaign"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="openLoginActivity"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;ILcom/spotify/sdk/android/authentication/AuthenticationRequest;)V">
+        <parameter
+          name="contextActivity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+        <parameter
+          name="requestCode"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="request"
+          type="com.spotify.sdk.android.authentication.AuthenticationRequest"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationRequest;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="openLoginInBrowser"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;Lcom/spotify/sdk/android/authentication/AuthenticationRequest;)V">
+        <parameter
+          name="contextActivity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+        <parameter
+          name="request"
+          type="com.spotify.sdk.android.authentication.AuthenticationRequest"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationRequest;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="stopLoginActivity"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;I)V">
+        <parameter
+          name="contextActivity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+        <parameter
+          name="requestCode"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="AuthenticationClient.1"
+      jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationClient$1;"
+      static="false"
+      visibility="">
+      <implements
+        name="com.spotify.sdk.android.authentication.AuthenticationHandler.OnCompleteListener"
+        name-generic-aware="com.spotify.sdk.android.authentication.AuthenticationHandler.OnCompleteListener"
+        jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationHandler$OnCompleteListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onCancel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onComplete"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/spotify/sdk/android/authentication/AuthenticationResponse;)V">
+        <parameter
+          name="response"
+          type="com.spotify.sdk.android.authentication.AuthenticationResponse"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationResponse;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onError"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Throwable;)V">
+        <parameter
+          name="error"
+          type="java.lang.Throwable"
+          jni-type="Ljava/lang/Throwable;" />
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="AuthenticationClient.AuthenticationClientListener"
+      jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationClient$AuthenticationClientListener;"
+      static="true"
+      visibility="">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onClientCancelled"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onClientComplete"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/spotify/sdk/android/authentication/AuthenticationResponse;)V">
+        <parameter
+          name="p0"
+          type="com.spotify.sdk.android.authentication.AuthenticationResponse"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationResponse;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="AuthenticationClient.QueryParams"
+      jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationClient$QueryParams;"
+      static="true"
+      visibility="">
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="ID"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;id&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="REFERRER"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;referrer&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="UTM_CAMPAIGN"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;utm_campaign&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="UTM_MEDIUM"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;utm_medium&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="UTM_SOURCE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;utm_source&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="AuthenticationHandler"
+      jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationHandler;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setOnCompleteListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/spotify/sdk/android/authentication/AuthenticationHandler$OnCompleteListener;)V">
+        <parameter
+          name="p0"
+          type="com.spotify.sdk.android.authentication.AuthenticationHandler.OnCompleteListener"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationHandler$OnCompleteListener;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="start"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;Lcom/spotify/sdk/android/authentication/AuthenticationRequest;)Z">
+        <parameter
+          name="p0"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+        <parameter
+          name="p1"
+          type="com.spotify.sdk.android.authentication.AuthenticationRequest"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationRequest;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="stop"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </interface>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="AuthenticationHandler.OnCompleteListener"
+      jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationHandler$OnCompleteListener;"
+      static="true"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onCancel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onComplete"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/spotify/sdk/android/authentication/AuthenticationResponse;)V">
+        <parameter
+          name="p0"
+          type="com.spotify.sdk.android.authentication.AuthenticationResponse"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationResponse;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onError"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Throwable;)V">
+        <parameter
+          name="p0"
+          type="java.lang.Throwable"
+          jni-type="Ljava/lang/Throwable;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="AuthenticationRequest"
+      jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationRequest;"
+      static="false"
+      visibility="public">
+      <implements
+        name="android.os.Parcelable"
+        name-generic-aware="android.os.Parcelable"
+        jni-type="Landroid/os/Parcelable;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="AuthenticationRequest"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Parcel;)V">
+        <parameter
+          name="source"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="describeContents"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getCampaign"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getClientId"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getCustomParam"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Ljava/lang/String;">
+        <parameter
+          name="key"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getRedirectUri"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getResponseType"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getScopes"
+        native="false"
+        return="java.lang.String[]"
+        jni-return="[Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getState"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toUri"
+        native="false"
+        return="android.net.Uri"
+        jni-return="Landroid/net/Uri;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/net/Uri;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="writeToParcel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Parcel;I)V">
+        <parameter
+          name="dest"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+        <parameter
+          name="flags"
+          type="int"
+          jni-type="I" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="CREATOR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="android.os.Parcelable.Creator"
+        type-generic-aware="android.os.Parcelable.Creator&lt;com.spotify.sdk.android.authentication.AuthenticationRequest&gt;"
+        jni-signature="Landroid/os/Parcelable$Creator;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="AuthenticationRequest.1"
+      jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationRequest$1;"
+      static="true"
+      visibility="">
+      <implements
+        name="android.os.Parcelable.Creator"
+        name-generic-aware="android.os.Parcelable.Creator&lt;com.spotify.sdk.android.authentication.AuthenticationRequest&gt;"
+        jni-type="Landroid/os/Parcelable$Creator&lt;Lcom/spotify/sdk/android/authentication/AuthenticationRequest;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createFromParcel"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationRequest"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationRequest;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Parcel;)Lcom/spotify/sdk/android/authentication/AuthenticationRequest;">
+        <parameter
+          name="source"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createFromParcel"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Landroid/os/Parcel;)Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="newArray"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationRequest[]"
+        jni-return="[Lcom/spotify/sdk/android/authentication/AuthenticationRequest;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)[Lcom/spotify/sdk/android/authentication/AuthenticationRequest;">
+        <parameter
+          name="size"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="newArray"
+        native="false"
+        return="java.lang.Object[]"
+        jni-return="[Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(I)[Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="AuthenticationRequest.Builder"
+      jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationRequest$Builder;"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="AuthenticationRequest.Builder"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Type;Ljava/lang/String;)V">
+        <parameter
+          name="clientId"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="responseType"
+          type="com.spotify.sdk.android.authentication.AuthenticationResponse.Type"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Type;" />
+        <parameter
+          name="redirectUri"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="build"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationRequest"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationRequest;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/spotify/sdk/android/authentication/AuthenticationRequest;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setCampaign"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationRequest.Builder"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationRequest$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/spotify/sdk/android/authentication/AuthenticationRequest$Builder;">
+        <parameter
+          name="campaign"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setCustomParam"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationRequest.Builder"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationRequest$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;)Lcom/spotify/sdk/android/authentication/AuthenticationRequest$Builder;">
+        <parameter
+          name="key"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="value"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setScopes"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationRequest.Builder"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationRequest$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([Ljava/lang/String;)Lcom/spotify/sdk/android/authentication/AuthenticationRequest$Builder;">
+        <parameter
+          name="scopes"
+          type="java.lang.String[]"
+          jni-type="[Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setShowDialog"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationRequest.Builder"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationRequest$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)Lcom/spotify/sdk/android/authentication/AuthenticationRequest$Builder;">
+        <parameter
+          name="showDialog"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setState"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationRequest.Builder"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationRequest$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/spotify/sdk/android/authentication/AuthenticationRequest$Builder;">
+        <parameter
+          name="state"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="AuthenticationRequest.QueryParams"
+      jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationRequest$QueryParams;"
+      static="true"
+      visibility="">
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="CLIENT_ID"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;client_id&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="REDIRECT_URI"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;redirect_uri&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="RESPONSE_TYPE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;response_type&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="SCOPE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;scope&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="SHOW_DIALOG"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;show_dialog&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="STATE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;state&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="UTM_CAMPAIGN"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;utm_campaign&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="UTM_MEDIUM"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;utm_medium&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="UTM_SOURCE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;utm_source&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="AuthenticationResponse"
+      jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationResponse;"
+      static="false"
+      visibility="public">
+      <implements
+        name="android.os.Parcelable"
+        name-generic-aware="android.os.Parcelable"
+        jni-type="Landroid/os/Parcelable;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="AuthenticationResponse"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Parcel;)V">
+        <parameter
+          name="source"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="describeContents"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="fromUri"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationResponse"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationResponse;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/net/Uri;)Lcom/spotify/sdk/android/authentication/AuthenticationResponse;">
+        <parameter
+          name="uri"
+          type="android.net.Uri"
+          jni-type="Landroid/net/Uri;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getAccessToken"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getCode"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getError"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getExpiresIn"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getState"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getType"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationResponse.Type"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Type;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Type;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="writeToParcel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Parcel;I)V">
+        <parameter
+          name="dest"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+        <parameter
+          name="flags"
+          type="int"
+          jni-type="I" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="CREATOR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="android.os.Parcelable.Creator"
+        type-generic-aware="android.os.Parcelable.Creator&lt;com.spotify.sdk.android.authentication.AuthenticationResponse&gt;"
+        jni-signature="Landroid/os/Parcelable$Creator;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="AuthenticationResponse.1"
+      jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$1;"
+      static="true"
+      visibility="">
+      <implements
+        name="android.os.Parcelable.Creator"
+        name-generic-aware="android.os.Parcelable.Creator&lt;com.spotify.sdk.android.authentication.AuthenticationResponse&gt;"
+        jni-type="Landroid/os/Parcelable$Creator&lt;Lcom/spotify/sdk/android/authentication/AuthenticationResponse;&gt;;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createFromParcel"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationResponse"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationResponse;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Parcel;)Lcom/spotify/sdk/android/authentication/AuthenticationResponse;">
+        <parameter
+          name="source"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createFromParcel"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(Landroid/os/Parcel;)Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="android.os.Parcel"
+          jni-type="Landroid/os/Parcel;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="newArray"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationResponse[]"
+        jni-return="[Lcom/spotify/sdk/android/authentication/AuthenticationResponse;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)[Lcom/spotify/sdk/android/authentication/AuthenticationResponse;">
+        <parameter
+          name="size"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="newArray"
+        native="false"
+        return="java.lang.Object[]"
+        jni-return="[Ljava/lang/Object;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="true"
+        synthetic="true"
+        jni-signature="(I)[Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="AuthenticationResponse.Builder"
+      jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Builder;"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="AuthenticationResponse.Builder"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="build"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationResponse"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationResponse;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/spotify/sdk/android/authentication/AuthenticationResponse;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setAccessToken"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationResponse.Builder"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Builder;">
+        <parameter
+          name="accessToken"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setCode"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationResponse.Builder"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Builder;">
+        <parameter
+          name="code"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setError"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationResponse.Builder"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Builder;">
+        <parameter
+          name="error"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setExpiresIn"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationResponse.Builder"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Builder;">
+        <parameter
+          name="expiresIn"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setState"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationResponse.Builder"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Builder;">
+        <parameter
+          name="state"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setType"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationResponse.Builder"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Type;)Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Builder;">
+        <parameter
+          name="type"
+          type="com.spotify.sdk.android.authentication.AuthenticationResponse.Type"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Type;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="AuthenticationResponse.QueryParams"
+      jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$QueryParams;"
+      static="true"
+      visibility="">
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="ACCESS_TOKEN"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;access_token&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="CODE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;code&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="ERROR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;error&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="EXPIRES_IN"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;expires_in&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="STATE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;state&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Enum;"
+      extends="java.lang.Enum"
+      extends-generic-aware="java.lang.Enum&lt;com.spotify.sdk.android.authentication.AuthenticationResponse.Type&gt;"
+      final="true"
+      name="AuthenticationResponse.Type"
+      jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Type;"
+      static="true"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toString"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="valueOf"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationResponse.Type"
+        jni-return="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Type;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Type;">
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="values"
+        native="false"
+        return="com.spotify.sdk.android.authentication.AuthenticationResponse.Type[]"
+        jni-return="[Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Type;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Type;" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="CODE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.spotify.sdk.android.authentication.AuthenticationResponse.Type"
+        type-generic-aware="com.spotify.sdk.android.authentication.AuthenticationResponse.Type"
+        jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="EMPTY"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.spotify.sdk.android.authentication.AuthenticationResponse.Type"
+        type-generic-aware="com.spotify.sdk.android.authentication.AuthenticationResponse.Type"
+        jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="ERROR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.spotify.sdk.android.authentication.AuthenticationResponse.Type"
+        type-generic-aware="com.spotify.sdk.android.authentication.AuthenticationResponse.Type"
+        jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="TOKEN"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.spotify.sdk.android.authentication.AuthenticationResponse.Type"
+        type-generic-aware="com.spotify.sdk.android.authentication.AuthenticationResponse.Type"
+        jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Type;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="UNKNOWN"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.spotify.sdk.android.authentication.AuthenticationResponse.Type"
+        type-generic-aware="com.spotify.sdk.android.authentication.AuthenticationResponse.Type"
+        jni-signature="Lcom/spotify/sdk/android/authentication/AuthenticationResponse$Type;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="BuildConfig"
+      jni-signature="Lcom/spotify/sdk/android/authentication/BuildConfig;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="BuildConfig"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="APPLICATION_ID"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;com.spotify.sdk.android.authentication&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="BUILD_TYPE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;release&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="DEBUG"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="boolean"
+        type-generic-aware="boolean"
+        jni-signature="Z"
+        value="false"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="FLAVOR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VERSION_CODE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="2"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VERSION_NAME"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;1.1.0&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="CustomTabAuthHandler"
+      jni-signature="Lcom/spotify/sdk/android/authentication/CustomTabAuthHandler;"
+      static="false"
+      visibility="public">
+      <implements
+        name="com.spotify.sdk.android.authentication.AuthenticationHandler"
+        name-generic-aware="com.spotify.sdk.android.authentication.AuthenticationHandler"
+        jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationHandler;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="CustomTabAuthHandler"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setOnCompleteListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/spotify/sdk/android/authentication/AuthenticationHandler$OnCompleteListener;)V">
+        <parameter
+          name="listener"
+          type="com.spotify.sdk.android.authentication.AuthenticationHandler.OnCompleteListener"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationHandler$OnCompleteListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="start"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;Lcom/spotify/sdk/android/authentication/AuthenticationRequest;)Z">
+        <parameter
+          name="contextActivity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+        <parameter
+          name="request"
+          type="com.spotify.sdk.android.authentication.AuthenticationRequest"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationRequest;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="stop"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/app/Activity;"
+      extends="android.app.Activity"
+      extends-generic-aware="android.app.Activity"
+      final="false"
+      name="LoginActivity"
+      jni-signature="Lcom/spotify/sdk/android/authentication/LoginActivity;"
+      static="false"
+      visibility="public">
+      <implements
+        name="com.spotify.sdk.android.authentication.AuthenticationClient.AuthenticationClientListener"
+        name-generic-aware="com.spotify.sdk.android.authentication.AuthenticationClient.AuthenticationClientListener"
+        jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationClient$AuthenticationClientListener;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="LoginActivity"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getAuthIntent"
+        native="false"
+        return="android.content.Intent"
+        jni-return="Landroid/content/Intent;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;Lcom/spotify/sdk/android/authentication/AuthenticationRequest;)Landroid/content/Intent;">
+        <parameter
+          name="contextActivity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+        <parameter
+          name="request"
+          type="com.spotify.sdk.android.authentication.AuthenticationRequest"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationRequest;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onActivityResult"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(IILandroid/content/Intent;)V">
+        <parameter
+          name="requestCode"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="resultCode"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="intent"
+          type="android.content.Intent"
+          jni-type="Landroid/content/Intent;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onClientCancelled"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onClientComplete"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/spotify/sdk/android/authentication/AuthenticationResponse;)V">
+        <parameter
+          name="response"
+          type="com.spotify.sdk.android.authentication.AuthenticationResponse"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationResponse;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onCreate"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Bundle;)V">
+        <parameter
+          name="savedInstanceState"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onDestroy"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onNewIntent"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Intent;)V">
+        <parameter
+          name="intent"
+          type="android.content.Intent"
+          jni-type="Landroid/content/Intent;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onPause"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onResume"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="REQUEST_CODE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="1138"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="REQUEST_KEY"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;request&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="RESPONSE_KEY"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;response&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/app/Dialog;"
+      extends="android.app.Dialog"
+      extends-generic-aware="android.app.Dialog"
+      final="false"
+      name="LoginDialog"
+      jni-signature="Lcom/spotify/sdk/android/authentication/LoginDialog;"
+      static="false"
+      visibility="">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="LoginDialog"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;ILcom/spotify/sdk/android/authentication/AuthenticationRequest;)V">
+        <parameter
+          name="contextActivity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+        <parameter
+          name="theme"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="request"
+          type="com.spotify.sdk.android.authentication.AuthenticationRequest"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationRequest;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="LoginDialog"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;Lcom/spotify/sdk/android/authentication/AuthenticationRequest;)V">
+        <parameter
+          name="contextActivity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+        <parameter
+          name="request"
+          type="com.spotify.sdk.android.authentication.AuthenticationRequest"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationRequest;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="close"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onAttachedToWindow"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onCreate"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Bundle;)V">
+        <parameter
+          name="savedInstanceState"
+          type="android.os.Bundle"
+          jni-type="Landroid/os/Bundle;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onDetachedFromWindow"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onStop"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setOnCompleteListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/spotify/sdk/android/authentication/AuthenticationHandler$OnCompleteListener;)V">
+        <parameter
+          name="listener"
+          type="com.spotify.sdk.android.authentication.AuthenticationHandler.OnCompleteListener"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationHandler$OnCompleteListener;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="LoginDialog.1"
+      jni-signature="Lcom/spotify/sdk/android/authentication/LoginDialog$1;"
+      static="false"
+      visibility="">
+      <implements
+        name="android.content.DialogInterface.OnCancelListener"
+        name-generic-aware="android.content.DialogInterface.OnCancelListener"
+        jni-type="Landroid/content/DialogInterface$OnCancelListener;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onCancel"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/DialogInterface;)V">
+        <parameter
+          name="dialogInterface"
+          type="android.content.DialogInterface"
+          jni-type="Landroid/content/DialogInterface;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/webkit/WebViewClient;"
+      extends="android.webkit.WebViewClient"
+      extends-generic-aware="android.webkit.WebViewClient"
+      final="false"
+      name="LoginDialog.2"
+      jni-signature="Lcom/spotify/sdk/android/authentication/LoginDialog$2;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onPageFinished"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/webkit/WebView;Ljava/lang/String;)V">
+        <parameter
+          name="view"
+          type="android.webkit.WebView"
+          jni-type="Landroid/webkit/WebView;" />
+        <parameter
+          name="url"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onPageStarted"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/webkit/WebView;Ljava/lang/String;Landroid/graphics/Bitmap;)V">
+        <parameter
+          name="view"
+          type="android.webkit.WebView"
+          jni-type="Landroid/webkit/WebView;" />
+        <parameter
+          name="url"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="favicon"
+          type="android.graphics.Bitmap"
+          jni-type="Landroid/graphics/Bitmap;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onReceivedError"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/webkit/WebView;ILjava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="view"
+          type="android.webkit.WebView"
+          jni-type="Landroid/webkit/WebView;" />
+        <parameter
+          name="errorCode"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="description"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="failingUrl"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="shouldOverrideUrlLoading"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/webkit/WebView;Ljava/lang/String;)Z">
+        <parameter
+          name="view"
+          type="android.webkit.WebView"
+          jni-type="Landroid/webkit/WebView;" />
+        <parameter
+          name="url"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SpotifyAuthHandler"
+      jni-signature="Lcom/spotify/sdk/android/authentication/SpotifyAuthHandler;"
+      static="false"
+      visibility="">
+      <implements
+        name="com.spotify.sdk.android.authentication.AuthenticationHandler"
+        name-generic-aware="com.spotify.sdk.android.authentication.AuthenticationHandler"
+        jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationHandler;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setOnCompleteListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/spotify/sdk/android/authentication/AuthenticationHandler$OnCompleteListener;)V">
+        <parameter
+          name="listener"
+          type="com.spotify.sdk.android.authentication.AuthenticationHandler.OnCompleteListener"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationHandler$OnCompleteListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="start"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;Lcom/spotify/sdk/android/authentication/AuthenticationRequest;)Z">
+        <parameter
+          name="contextActivity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+        <parameter
+          name="request"
+          type="com.spotify.sdk.android.authentication.AuthenticationRequest"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationRequest;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="stop"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SpotifyNativeAuthUtil"
+      jni-signature="Lcom/spotify/sdk/android/authentication/SpotifyNativeAuthUtil;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SpotifyNativeAuthUtil"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;Lcom/spotify/sdk/android/authentication/AuthenticationRequest;)V">
+        <parameter
+          name="contextActivity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+        <parameter
+          name="request"
+          type="com.spotify.sdk.android.authentication.AuthenticationRequest"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationRequest;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="startAuthActivity"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="stopAuthActivity"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="WebViewAuthHandler"
+      jni-signature="Lcom/spotify/sdk/android/authentication/WebViewAuthHandler;"
+      static="false"
+      visibility="">
+      <implements
+        name="com.spotify.sdk.android.authentication.AuthenticationHandler"
+        name-generic-aware="com.spotify.sdk.android.authentication.AuthenticationHandler"
+        jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationHandler;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setOnCompleteListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/spotify/sdk/android/authentication/AuthenticationHandler$OnCompleteListener;)V">
+        <parameter
+          name="listener"
+          type="com.spotify.sdk.android.authentication.AuthenticationHandler.OnCompleteListener"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationHandler$OnCompleteListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="start"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/app/Activity;Lcom/spotify/sdk/android/authentication/AuthenticationRequest;)Z">
+        <parameter
+          name="contextActivity"
+          type="android.app.Activity"
+          jni-type="Landroid/app/Activity;" />
+        <parameter
+          name="request"
+          type="com.spotify.sdk.android.authentication.AuthenticationRequest"
+          jni-type="Lcom/spotify/sdk/android/authentication/AuthenticationRequest;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="stop"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+  </package>
+</api>

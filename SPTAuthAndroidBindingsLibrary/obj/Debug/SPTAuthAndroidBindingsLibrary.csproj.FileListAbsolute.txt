@@ -1,0 +1,5 @@
+D:\VSProjects\SPTAuthAndroidBindingsLibrary\SPTAuthAndroidBindingsLibrary\bin\Debug\SPTAuthAndroidBindingsLibrary.dll
+D:\VSProjects\SPTAuthAndroidBindingsLibrary\SPTAuthAndroidBindingsLibrary\bin\Debug\SPTAuthAndroidBindingsLibrary.pdb
+D:\VSProjects\SPTAuthAndroidBindingsLibrary\SPTAuthAndroidBindingsLibrary\obj\Debug\SPTAuthAndroidBindingsLibrary.csproj.CoreCompileInputs.cache
+D:\VSProjects\SPTAuthAndroidBindingsLibrary\SPTAuthAndroidBindingsLibrary\obj\Debug\SPTAuthAndroidBindingsLibrary.dll
+D:\VSProjects\SPTAuthAndroidBindingsLibrary\SPTAuthAndroidBindingsLibrary\obj\Debug\SPTAuthAndroidBindingsLibrary.pdb
